@@ -1,0 +1,45 @@
+<!DOCTYPE >
+    <html lang="ar">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="./jquery-3.5.1.min.js"></script>
+    </head>
+
+    <body>
+        <form>
+            <input class="username form-text required form-control" requiredErrAr="1قم بإدخال الهوية"
+                requiredErrEn="please Enter Identity 1" autocorrect="off" autocapitalize="off" spellcheck="false"
+                data-drupal-selecto="edit-name" type="number" id="edit-name--2" name="name" value="" size="60"
+                maxlength="60 placeholder=" رقم المستخدم : رقم الهوية الوطنية" required="required" aria-required="true"
+                min="100000000000000" max="999999999999999">
+
+            <button type="submit">
+                submit
+            </button>
+        </form>
+        <form>
+            <input class="username form-text required form-control" valueMissingAr="قم بإدخال الهوية"
+                requiredErrEn="please Enter Identity" autocorrect="off" autocapitalize="off" spellcheck="false"
+                data-drupal-selector="edit-name" type="number" id="edit-name--2" name="identity" value="" size="60"
+                maxlength="60" placeholder="رقم المستخدم : رقم الهوية الوطنية" required="required" aria-required="true"
+                rangeOverflowAr="رقم الهوية 15 رقم فقط من فضلك قم بحذف الزائد"
+                rangeOverflowEn="Identity number contains 15 digit please remove over " min="100000000000000"
+                max="999999999999999" rangeUnderflowAr="يجب إدخال 15 رقم">
+            <div class="form-group">
+                <input type="email" required valueMissingAr="قم بإدخال الاسم">
+            </div>
+            <button type="submit">
+                submit
+            </button>
+        </form>
+        <script src="./customizeHTml5Validation.js">
+        </script>
+        <script>
+            cutomHtml5Errors(true);
+        </script>
+    </body>
+
+    </html>
